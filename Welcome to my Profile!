@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #f0f0f0; /* Match background of main page if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .typing-demo {
+    width: 21ch; /* Number of characters in the text */
+    animation: typing 4s steps(22, end), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family:'Courier New',Courier. monospace;
+    font-size: 24px;
+  }
+ 
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 21ch; } /* Should match the width set above */
+  }
+  @keyframes blink {
+    50% { border-color: grey; }
+  }
+</style>
+</head>
+<body>
+  <div class="typing-demo">Welcome to my Portfolio!</div>
+</body>
+</html>
